@@ -1,0 +1,402 @@
+*
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+
+header
+	position: relative
+	height: 50px
+nav
+	position: fixed
+	width: 100%
+	height: 50px
+	background-color: #4cb1fb
+	z-index: 5
+	border-bottom: 2px solid #ffffff
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 0 50px 0 50px
+	&_block
+		display: flex
+	&_img
+		height: 50px
+		width: 50px
+	&_logo
+		margin-top: 7px
+		font-family: 'Moon'
+		font-size: 27px
+		font-weight: 300
+		text-decoration: none
+		color: #ffffff
+		a
+			text-decoration: none
+		&:hover
+			color: #ffffff
+	&_spisok
+		margin: 0
+		padding: 0
+		height: 50px
+		list-style: none
+		&_link
+			display: block
+			font-family: 'Moon'
+			font-size: 20px
+			font-weight: 300
+			padding: 0 20px
+			padding-top: 2px
+			color: #ffffff
+			line-height: 50px
+			text-decoration: none
+			&:hover
+				height: 50px
+				color: #fff
+				background-color: #3ea3eb
+				border-bottom: 2px solid #ffffff
+		&_item
+			float: left
+	&_btn
+		margin: 10px 0
+		width: 80px
+		height: 30px
+		background: #81b9da
+		border: 2px solid
+		border-color: #fff 
+		border-radius: 5px
+		color: #fff
+		text-decoration: none
+		font-family: 'Moon'
+		font-size: 14px
+		font-weight: 300
+		&:hover
+			background: #5d97b8
+		&:active
+			background: #9b5db8
+
+.main
+	position: relative
+	min-height: 717px
+	width: 100%
+	background: url('/img/bg1.png') center (center / cover) no-repeat
+	&_img1
+		position: absolute
+		top: 158px
+		left: 50%
+		transform: translateX(-50%)
+		display: block
+		width: 870px
+		height: 269px
+		opacity: 1
+		transition: 1s
+		z-index: 2
+		&:hover
+			opacity: 0
+		&:hover + .main_img2
+			display: block
+			width: 472px
+			height: 477px
+			opacity: 1
+			transition: opacity 1s
+	&_img2
+		position: absolute
+		top: 50px
+		left: 50%
+		transform: translateX(-50%)
+		opacity: 0
+		transition: opacity 1s
+		z-index: 1
+
+	&_arrow
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+
+.team
+	padding-top: 68px
+	min-height: 1032px
+	background: url('/img/bg2.png') center (center / cover) no-repeat
+	&_title
+		margin: 0
+		font-family: 'Exo 2'
+		font-size: 90.6px
+		font-weight: 700
+		color: #ffffff
+		text-align: center
+	&_corona
+		display: block
+		margin: 0 auto
+		margin-top: 60px
+	&_img
+		width: 319px
+		height: 406px
+		border: 15px solid #ffffff
+		margin: 0 auto
+		margin-bottom: 19px
+		transition: 1s
+		&_1
+			background: url('/img/Patrik.png') center (center / cover) no-repeat
+		&_2
+			width: 366px
+			height: 465px
+			background: url('/img/Awerock.png') center (center / cover) no-repeat
+		&_3
+			background: url('/img/Vindematrix.png') center (center / cover) no-repeat
+	&_name
+		margin-top: 60px
+		font-family: 'Exo 2'
+		font-size: 39.1px
+		font-weight: 400
+		color: #ffffff
+		text-align: center
+		transition: 1s
+		&_cap
+			margin-top: 20px
+			font-family: 'Exo 2'
+			font-size: 50px
+			font-weight: 400
+			color: #ffffff
+			text-align: center
+	&_active
+		transition: 1s
+		&:hover
+			transform: scale(1.05)
+		&:hover .team_name
+			color: #dcc31b
+		&:hover .team_img
+			border: 15px solid #dcc31b
+
+.progress
+	min-height: 700px
+	background: url('/img/bg2_1.png') center (center / cover) no-repeat , linear-gradient(90deg, #4cb1fb, #4a69be)
+	padding-top: 68px
+	z-index: 1
+	&_title
+		font-family: 'Exo 2'
+		font-size: 90.6px
+		font-weight: 700
+		color: #ffffff
+		text-align: center
+		text-transform: uppercase
+	&_table
+		border-collapse: collapse
+		margin: 0 auto
+		font-family: 'Exo 2'
+		margin-top: 50px
+		font-size: 20px
+		min-width: 600px
+		border-radius: 10px 10px 0 0
+		overflow: hidden
+		thead
+			tr
+				font-family: 'Exo 2'
+				background-color: #9757bd
+				color: #ffffff
+				text-align: left
+				font-weight: bold
+				text-decoration: none
+				text-transform: uppercase
+		th, td
+			padding: 12px 15px
+		tbody
+			tr
+				color: #703194
+				border-bottom: 1px solid #dce0ff
+				a
+					color:  #703194
+				&:last-child
+					border-bottom: none
+				&:nth-of-type(even)
+					background-color: #ecf4ff
+				&:nth-of-type(odd)
+					background-color: #f4ecff
+				&:hover
+					transition: 0.5s
+					background-color: #f2fff9
+				&:last-child 
+					td 
+						&:last-child 
+							border-radius: 0 0 10px 0
+						&:first-child 
+							border-radius: 0 0 0 10px
+.who
+	position: relative
+	width: 100%
+	min-height: 891px
+	background: url('/img/bg3.png') center (center / cover) no-repeat
+	overflow: hidden
+	&:hover  .who_shapka
+		top: 0px
+		height: 454px
+	&:hover  .who_btn , &:hover .who_random
+		opacity: 1
+	&_shapka
+		position: absolute
+		width: 553px
+		height: 454px
+		top: -454px
+		background: url('/img/flag.png') center (center / cover) no-repeat
+		left: 50%
+		transform: translateX(-50%)
+		transition: 200ms ease
+		&_title
+			padding-top: 40px
+			text-transform: uppercase
+			text-align: center
+			font-family: 'Exo 2'
+			font-size: 60px
+			line-height: 1.2
+			font-weight: 700
+			color: #ffffff
+	&_random
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 100px
+		border: 0
+		opacity: 0
+		transition: 200ms ease
+	&_btn
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		background: #4cb1fb
+		bottom: 25px
+		color: #3f6e94
+		font-family: 'Exo 2'
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 2em
+		padding: 1rem
+		transition: all 0.5s
+		border-radius: 10px
+		width: auto
+		min-width: 170px
+		border: 2px solid
+		border-color: #b17575
+		opacity: 0
+		&::after
+			content: ""
+			background: url("/logo/main_logo_1.png") center (center / cover) no-repeat
+			position: absolute
+			width: 30px
+			height: 30px
+			left: 80%
+			top: 50%
+			right: 0
+			bottom: 0
+			opacity: 0
+			transform: translate(-50%, -50%)
+		&:hover
+			background: #a72828
+			transition: all 0.5s
+			border-radius: 10px
+			box-shadow: 0px 6px 15px #0000ff61
+			padding: 1rem 3rem 1rem 1rem
+			color: #fff
+			&:after
+				opacity: 1
+				transition: all 0.5s
+
+footer
+	min-height: 170px
+	border-top: 2px solid #fff
+	background-color: #4cb1fb
+	padding: 40px 0
+
+.footer_social
+	list-style: none
+	display: flex
+	justify-content: space-between
+	padding: 0
+	li
+		list-style: none
+		display: flex
+		margin: 0 auto
+		a
+			color: #3f6e94
+			display: inline-flex
+			width: 40px
+			height: 40px
+			justify-content: center
+			align-items: center
+			font-size: 22px
+			border-radius: 50%
+			transition: 0.2s ease
+			&:hover
+				background-color: #3f6e94
+				color: #fff
+.footer_links
+	display: flex
+	justify-content: space-between
+	width: 300px
+	margin: 0 auto
+	a
+		font-family: 'Roboto'
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		color: #3f6e94
+		transition: 0.2s ease
+		&:hover
+				color: #fff
+.footer_name
+	display: block
+	width: fit-content
+	margin: 0 auto
+	margin-top: 20px
+	a
+		font-family: 'Roboto'
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		color: #3f6e94
+		transition: 0.2s ease
+		&:hover
+				color: #fff
+	
+
+@media (max-width: 1200px)
+	.team_img
+		width: 260px
+		height: 331px
+		&_2
+			width: 300px
+			height: 381px
+
+@media (max-width: 991px)
+	.team
+		min-height: 800px
+	.team_img
+		width: 200px
+		height: 255px
+		border: 5px solid #ffffff
+		&_2
+			width: 220px
+			height: 300px
+	.team_active
+			transition: 1s
+			&:hover
+				transform: scale(1.05)
+			&:hover .team_name
+				color: #dcc31b
+			&:hover .team_img
+				border: 5px solid #dcc31b
+	.team_name
+			font-size: 20px
+			&_cap
+				font-size: 25px
+
+	.menu_spisok
+		display: none
+
+	.main_img1
+		width: 700px
+		height: 216px
+
+@media (max-width: 767px)
+
+	.main_img1
+		width: 550px
+		height: 170px
